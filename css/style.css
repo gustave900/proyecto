@@ -5,29 +5,24 @@
     box-sizing: border-box;
 }
 
-/* Header Controls / BRAND*/
 
-
-.brand-container {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.brand-items {
-    display: flex;
-    justify-content: center;
-    
-}
-.item-logo {
+/*BRAND*/
+    .item-logo {
     height: 150px;
     display: flex;
     margin: 0 10px 0 10px; 
-}
+    }
 
 
-.item-marca {
+    .item-marca {
+    color: white;
+    font-family: 'Peralta', cursive;
+    font-size: 40px;
+    letter-spacing: 15px;
+    word-spacing: 35px;
+    }
+
+    .item-marca2 {
     color: white;
     font-family: 'Peralta', cursive;
     font-size: 40px;
@@ -35,15 +30,7 @@
     word-spacing: 35px;
 }
 
-.item-marca2 {
-    color: white;
-    font-family: 'Peralta', cursive;
-    font-size: 40px;
-    letter-spacing: 15px;
-    word-spacing: 35px;
-}
-
-/*MENU bar*/
+/*NavBar*/
 
 .menu-container {
     display: flex;
@@ -78,11 +65,7 @@ h1 {
 }
 
 
-/*Carrousel*/
-#carousel-contanier{
-    display: flex;
-    justify-content: center;
-}
+
 
 
 /*Tienda/Categorias section*/

@@ -20,43 +20,43 @@
 <body>
 <!--Comienzo de Header-->
     <header>
-<!--BRAND / LOGO-->
-        <div class="container bg-black d-flex text-center justify-content-center mw-100">
-            <div class="row align-items-center">
+<!--BRAND / usando patrón de bootstrap, aplicando sus etiquetas y complementando estilos con css-->
+        <div class="container bg-black d-flex justify-content-evenly mw-100">
+            <div class="row align-items-center mw-100">
               <div class="col">
                 <h2 class="item-marca">HOJAS</h2>
               </div>
               <div class="col">
-                <img src="/imagenes-sucu/logopng.png" class="item-logo" alt="Logo de la empresa">
+                <img src="/imagenes-sucu/logopng.png" class="item-logo mw-100 d-flex justify-content-center" alt="Logo de la empresa">
               </div>
               <div class="col">
                 <h2 class="item-marca2">RECHONCHAS</h2>
               </div>
             </div>
-          </div>
+        </div>
 <!--NAVBAR-->
-        <nav>
-            <ul class="menu-container">
-                <li class="menu-items">
-                    <a href="index.html" class="item">INICIO</a>
-                </li>
-                <li class="menu-items">
-                    <a href="/pages/tienda.html" class="item">TIENDA</a>
-                </li>
-                <li class="menu-items">
-                    <a href="/pages/tips-cuidados.html" class="item">TIPS/CUIDADOS</a>
-                </li>
-                <li class="menu-items">
-                    <a href="/pages/nosotros.html" class="item">NOSOTROS</a>
-                </li>
-            </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg menu-container">
+        <div class="container-fluid menu-items">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav container d-flex justify-content-around">
+            <a class="nav-link item text-black" href="index.html">INICIO</a>
+            <a class="nav-link item text-black" href="/pages/tienda.html">TIENDA</a>
+            <a class="nav-link item text-black" href="/pages/tips-cuidados.html">TIPS/CUIDADOS</a>
+            <a class="nav-link item text-black" href="/pages/nosotros.html">NOSOTROS</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
     </header>
 <!--Fin del Header-->  
 <!--Comienzo del main-->
     <main>
         
-        <h1 class="container text-center pt-5">Suculentas de colección, exóticas e importadas</h1>
+        <h1 class="container text-center pt-5 mw-100">Suculentas de colección, exóticas e importadas</h1>
 
 <!--Carousel-->
         <div id="carouselExampleIndicators" class="carousel slide w-50 container text-center pt-4"       data-bs-ride="true">
@@ -160,6 +160,14 @@
                 Te contactaremos por WhatsApp desde el sector de ENVÍOS para coordinar el pedido - Tiempo de Entrega: 1 a 3 días hábiles - Atención Virtual: Lunes a Sábado de 10 a 18 hs.
             </p>
         </section>
+
+
+
+
+
+
+
+
 
 <!--Inicio del Footer-->
 <!--Se incluyen enlaces absolutos, relativos e internos-->

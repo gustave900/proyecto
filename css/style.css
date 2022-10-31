@@ -8,9 +8,8 @@
 
 /*BRAND*/
     .item-logo {
-    height: 150px;
-    display: flex;
-    margin: 0 10px 0 10px; 
+    height: 120px;
+    display: flex; 
     }
 
 
@@ -32,24 +31,20 @@
 
 /*NavBar*/
 
+
 .menu-container {
-    display: flex;
     border: 3px solid black;
     height: 50px;
-    justify-content: space-around;
-    padding: 0 10% 0 10%; 
-    align-items: center;
 }
 
-
 .menu-items, .item {
-    font-weight: 300px;
     font-size: 15px;
-    color: black;
     text-decoration: none;
     letter-spacing: 2px;
     font-family: 'Peralta', cursive;
 }
+
+
 
 /*Slogan de la página, de qué se trata, cual es el tema principal e importante*/
 h1 {

@@ -63,7 +63,7 @@ h1 {
 
 
 
-/*Tienda/Categorias section*/
+/*Categorias / Con boostrap y css*/
 
 .link-categorias {
     display: flex;
@@ -76,37 +76,19 @@ h1 {
     margin: 80px 0 30px 0;
 }
 
-.container-categorias {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    
-}
-
-.items-categorias {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-}
 
 .items {
-    display: flex;
     width: 200px;
     height: 300px;
     margin-bottom: 10px;
-    justify-content: space-around;
-
 }
 
 h4 { 
-    display: flex;
     color: black;
-    font-size: 15px;
+    font-size: 5px;
     font-family: 'Peralta', cursive;
-    justify-content: space-around;
     margin-bottom: 35px;
-
+    width: 200px;
 }
 
 /*Tips y Cuidados Section*/
@@ -119,11 +101,12 @@ h4 {
 }
 
 
-.parrafos {
+#parrafos {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     text-align: center;
     font-weight: bold;
+    text-indent: 0;
 }
 
 

@@ -9,11 +9,13 @@
 /*BRAND*/
     .item-logo {
     height: 120px;
-    display: flex; 
+    width: auto;
     }
 
 
     .item-marca {
+    display: flex;
+    justify-items: end;
     color: white;
     font-family: 'Peralta', cursive;
     font-size: 40px;
@@ -22,16 +24,16 @@
     }
 
     .item-marca2 {
+    display: flex;
+    justify-items: start;
     color: white;
     font-family: 'Peralta', cursive;
     font-size: 40px;
     letter-spacing: 15px;
-    word-spacing: 35px;
+    margin-right: 200%;
 }
 
 /*NavBar*/
-
-
 .menu-container {
     border: 3px solid black;
     height: 50px;
@@ -43,7 +45,6 @@
     letter-spacing: 2px;
     font-family: 'Peralta', cursive;
 }
-
 
 
 /*Slogan de la página, de qué se trata, cual es el tema principal e importante*/
@@ -74,11 +75,12 @@ h1 {
     font-family: 'Peralta', cursive;
     text-decoration: none;
     margin: 120px 0 30px 0;
+    width: 100%;
 }
 
 
 .items {
-    width: 200px;
+    width: 100%;
     height: 300px;
     margin-bottom: 10px;
 }
@@ -86,9 +88,10 @@ h1 {
 .sub-categorias { 
     color: black;
     font-family: 'Peralta', cursive;
-    width: 200px;
+    width: 100%;
     font-size: 16px;
     font-weight: bold;
+    
 }
 
 /*Tips y Cuidados Section*/
@@ -114,14 +117,11 @@ h1 {
 
 .footer-container {
     width: 100%;
-    height: 200px;
+    height: 12em;
     display: flex;
     background-color: black;
     justify-content: space-around;
     align-items: center;
-    margin-top: 150px;
-    box-sizing: border-box;
-    
 }
 
 .footer-items {
@@ -129,11 +129,8 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
     width: 100%;
-    height: 200px;
-    box-sizing: border-box;
+    height: 100%;
     
 }
 
@@ -145,7 +142,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
     font-weight: bold;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 /*ECHEVERIAS DOCUMENTO.*/
@@ -174,7 +171,7 @@ h3 {
     }
 
 
-/*Parrafos responsive usando media queries / para mobile / Por ahora no quise usar medidas escalables como em ya que no las hemos visto*/
+/*Parrafos responsive usando media queries / para mobile */
 
 @media only screen and (max-width: 500px){
     .p-nosotros {
@@ -197,12 +194,13 @@ h3 {
         text-decoration: none;
         margin: 60px 0 15px 0;
         line-height: 130%;
+        width: auto;
     }
 
     .sub-categorias { 
         color: black;
         font-family: 'Peralta', cursive;
-        width: 200px;
+        width: 100%;
         font-size: 10px;
     }
 
@@ -211,14 +209,11 @@ h3 {
         font-size: 9px;
         text-align: center;
         font-weight: bold;
-        margin: 5px 60px 17px 60px;
+        margin: auto
     }
 }
 
 
-main {
-    margin: 0;
-}
 
 
 

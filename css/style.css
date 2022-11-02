@@ -103,14 +103,24 @@ h4 {
 
 
 /*Seguinos en Instragram*/
-
 .instagram-container {
-    margin: 80px 0 120px 0;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.instagram-items {
     display: flex;
     justify-content: space-around;
-    padding-right: 5%;
-    padding-left: 5%;  
 }
+
+.tem-ig { 
+    display: flex;
+    border: solid 10px blueviolet;
+
+}
+
 
 /*Footer Controls*/
 

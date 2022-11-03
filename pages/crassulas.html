@@ -19,47 +19,52 @@
 <body>
     <!--Comienzo de Header-->
     <header>
-        <section class="brand-container">
-            
-            <div class="brand-items"></div>
-                <div>
-                    <h2 class="item-marca">HOJAS</h2>
+            <!--BRAND Responsive/ usando patrón de bootstrap y complementando estilos con css-->
+        <div class="container bg-black mw-100">
+            <div class="row w-100">
+                <div class="col-sm-5 col-md-5 d-flex">
+                    <h2 class="item-marca d-flex align-items-center justify-content-end w-100">HOJAS</h2>
                 </div>
-
-                <div class="item-logo">
-                    <img src="/imagenes-sucu/logopng.png" alt="Logo de la empresa">
+                <div class="col-sm-2 col-md-2 d-flex justify-content-center">
+                    <img src="/imagenes-sucu/logopng.png" class="item-logo mw-auto" alt="Logo de la empresa">
                 </div>
-
-                <div>
-                    <h2 class="item-marca2">RECHONCHAS</h2>
+                <div class="col-sm-5 col-md-5 d-flex pr-5">
+                    <h2 class="item-marca2 d-flex align-items-center justify-content-start w-100">RECHONCHAS</h2>
                 </div>
-
             </div>
-            
-        </section>
-        
-        <nav>
-            <ul class="menu-container">
-                <li class="menu-items">
-                    <a href="/index.html" class="item">INICIO</a>
-                </li>
-                <li class="menu-items">
-                    <a href="tienda.html" class="item">TIENDA</a>
-                </li>
-                <li class="menu-items">
-                    <a href="tips-cuidados.html" class="item">TIPS/CUIDADOS</a>
-                </li>
-                <li class="menu-items">
-                    <a href="nosotros.html" class="item">NOSOTROS</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-<!--Fin del Header-->
+        </div>
 
+<!--NAVBAR Responsive-->
+
+    <nav class="navbar navbar-expand-sm bg-light menu-container mw-100">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse text-center" id="opciones">
+                <ul class="navbar-nav container-fluid w-100 d-flex justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" href="/pages/tienda.html">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" href="/pages/tips-cuidados.html">TIPS-CUIDADOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" href="/pages/nosotros.html">NOSOTROS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!--Comienzo del main-->
     <main>
-        <center>
-<!--Acá intenté hacerlo solo en cascada y nada de flexbox-->
+    
+
         <section>
             <h3 class="link-categorias">Crassula Ovata Gollum</h3>
             

@@ -20,7 +20,7 @@
 <body>
 <!--Comienzo de Header-->
     <header>
-<!--BRAND Responsive/ usando patrón de bootstrap y complementando estilos con css-->
+            <!--BRAND Responsive/ usando patrón de bootstrap y complementando estilos con css-->
         <div class="container bg-black mw-100">
             <div class="row w-100">
                 <div class="col-sm-5 col-md-5 d-flex">
@@ -34,53 +34,75 @@
                 </div>
             </div>
         </div>
-    
+
 <!--NAVBAR Responsive-->
-    
-        <nav class="container menu-container text-center d-flex justify-content-around mw-100 pt-2">
-            <ul class="row w-100 d-flex justify-content-around">
-                <li class="col-sm-6 col-md-3" style="list-style-type: none;">
-                    <a class="item text-black" href="#INICIO">INICIO</a>
-                </li>
-                <li class="col-sm-6 col-md-3" style="list-style-type: none;">
-                    <a class="item text-black" href="/pages/tienda.html">TIENDA</a>
-                </li>
-                <li class="col-sm-6 col-md-3" style="list-style-type: none;">
-                    <a class="item text-black" href="/pages/tips-cuidados.html">TIPS/CUIDADOS</a>
-                </li>
-                <li class="col-sm-6 col-md-3" style="list-style-type: none;">
-                    <a class="item text-black" href="/pages/nosotros.html">NOSOTROS</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-        
+
+    <nav class="navbar navbar-expand-sm bg-light menu-container mw-100">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse text-center" id="opciones">
+                <ul class="navbar-nav container-fluid w-100 d-flex justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" href="/pages/tienda.html">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" href="/pages/tips-cuidados.html">TIPS-CUIDADOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" href="/pages/nosotros.html">NOSOTROS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!--Comienzo del main-->
     <main>
-        
-<!--Acá intenté hacerlo solo en cascada y nada de flexbox-->
-        <section>
-            <h3 class="link-categorias">Echeveria Laui</h3>
+        <h3 class="link-categorias">Echeveria Laui</h3>
                 
-                <img src="/imagenes-sucu/echeveria-laui.jpg" alt="Echeveria Laui" class="img-px">
-                <img src="/imagenes-sucu/echeveria-laui-2.jpg" alt="Echeveria Laui 2" class="img-px">
-                
-                <p>psum dolor, sit amet consectetur adipisicing elit. Mollitia quidem eligendi, illum officiis excepturi ullam magnam quo autem provident nemo vitae tenetur dignissimos ut ipsa placeat voluptatum libero, ab sapiente. <br>
-                Eligendi enim id dolores nesciunt corporis ipsum omnis eveniet distinctio culpa libero quaerat atque architecto, eos earum autem laboriosam quia ipsam esse unde aut quis? Rem, impedit cumque! Blanditiis, vel!Est repellat temporibus exercitationem quisquam labore.Aliquam cum asperiores corrupti obcaecati laborum odio quam totam molestiae, itaque et quo rerum omnis iure amet iste quis neque excepturi. Quo, fuga doloremque.</p>
-            
-        </section>
 
-        <section>
-            <h3 class="link-categorias">Echeveria Hercules</h3>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <img src="/imagenes-sucu/echeveria-laui.jpg" alt="Echeveria Laui" class="img-px">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <img src="/imagenes-sucu/echeveria-laui-2.jpg" alt="Echeveria Laui 2" class="img-px">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 md-12">
+                    <p class="p-nosotros">psum dolor, sit amet consectetur adipisicing elit. Mollitia quidem eligendi, illum officiis excepturi ullam magnam quo autem provident nemo vitae tenetur dignissimos ut ipsa placeat voluptatum libero, ab sapiente.</p>
+                    <p class="p-nosotros">Eligendi enim id dolores nesciunt corporis ipsum omnis eveniet distinctio culpa libero quaerat atque architecto, eos earum autem laboriosam quia ipsam esse unde aut quis? Rem, impedit cumque! Blanditiis, vel!Est repellat temporibus exercitationem quisquam labore.Aliquam cum asperiores corrupti obcaecati laborum odio quam totam molestiae, itaque et quo rerum omnis iure amet iste quis neque excepturi. Quo, fuga doloremque.</p>
+                </div>
+            </div>
+        </div>
+                
+        <h3 class="link-categorias">Echeveria Hercules</h3>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
                     <img src="/imagenes-sucu/echeveria-hercules.jpg" alt="Echeveria Hercules" class="img-px">
+                </div>
+                <div class="col-sm-12 col-md-6">
                     <img src="/imagenes-sucu/echeveria-hercules-2.jpg" alt="Echeveria Hercules 2" class="img-px">
-            
-                    <p>psum dolor, sit amet consectetur adipisicing elit. Mollitia quidem eligendi, illum officiis excepturi ullam magnam quo autem provident nemo vitae tenetur dignissimos ut ipsa placeat voluptatum libero, ab sapiente. <br>
-                    Eligendi enim id dolores nesciunt corporis ipsum omnis eveniet distinctio culpa libero quaerat atque architecto, eos earum autem laboriosam quia ipsam esse unde aut quis? Rem, impedit cumque! Blanditiis, vel!Est repellat temporibus exercitationem quisquam labore.Aliquam cum asperiores corrupti obcaecati laborum odio quam totam molestiae, itaque et quo rerum omnis iure amet iste quis neque excepturi. Quo, fuga doloremque.</p>
-                
-        </section>
-
-        
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 md-12">
+                    <p class="p-nosotros">psum dolor, sit amet consectetur adipisicing elit. Mollitia quidem eligendi, illum officiis excepturi ullam magnam quo autem provident nemo vitae tenetur dignissimos ut ipsa placeat voluptatum libero, ab sapiente.</p>
+                    <p class="p-nosotros">Eligendi enim id dolores nesciunt corporis ipsum omnis eveniet distinctio culpa libero quaerat atque architecto, eos earum autem laboriosam quia ipsam esse unde aut quis? Rem, impedit cumque! Blanditiis, vel!Est repellat temporibus exercitationem quisquam labore.Aliquam cum asperiores corrupti obcaecati laborum odio quam totam molestiae, itaque et quo rerum omnis iure amet iste quis neque excepturi. Quo, fuga doloremque.</p>
+                </div>
+            </div>
+        </div>
     </main>
+
 <!--Inicio del Footer-->
     <footer class="container text-center mw-100 mt-5 mx-0">
         <div class="row footer-container mw-100">

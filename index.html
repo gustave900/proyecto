@@ -17,67 +17,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
-<body class="text-center mw-100 mx-0">
+<body>
 <!--Comienzo de Header-->
     <header>
-<!--BRAND / usando patrón de bootstrap y complementando estilos con css-->
+<!--BRAND Responsive/ usando patrón de bootstrap y complementando estilos con css-->
         <div class="container bg-black mw-100">
-            <div class="row mw-100">
-                <div class="col-sm-5 col-md-5">
-                    <h2 class="item-marca">HOJAS</h2>
+            <div class="row w-100">
+                <div class="col-sm-5 col-md-5 d-flex">
+                    <h2 class="item-marca d-flex align-items-center justify-content-end w-100">HOJAS</h2>
                 </div>
                 <div class="col-sm-2 col-md-2 d-flex justify-content-center">
-                    <img src="/imagenes-sucu/logopng.png" class="item-logo mw-auto d-flex text-center" alt="Logo de la empresa">
+                    <img src="/imagenes-sucu/logopng.png" class="item-logo mw-auto" alt="Logo de la empresa">
                 </div>
-                <div class="col-sm-5 col-md-5 d-flex justify-content-center">
-                    <h2 class="item-marca2 d-flex justify-content-center w-100">RECHONCHAS</h2>
+                <div class="col-sm-5 col-md-5 d-flex pr-5">
+                    <h2 class="item-marca2 d-flex align-items-center justify-content-start w-100">RECHONCHAS</h2>
                 </div>
             </div>
         </div>
 
-<!--NAVBAR-->
+<!--NAVBAR Responsive-->
 
-    <div class="container text-center d-flex justify-content-around">
-        <div class="row">
-            <div class="col">
-                <a class="nav-link item text-black" href="#INICIO">INICIO</a>
+    <nav class="navbar navbar-expand-sm bg-light menu-container mw-100">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse text-center" id="opciones">
+                <ul class="navbar-nav container-fluid w-100 d-flex justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" href="/pages/tienda.html">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" href="/pages/tips-cuidados.html">TIPS-CUIDADOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link item text-black" href="/pages/nosotros.html">NOSOTROS</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col">
-                <a class="nav-link item text-black" href="/pages/tienda.html">TIENDA</a>
-            </div>
-            <div class="col">
-                <a class="nav-link item text-black" href="/pages/tips-cuidados.html">TIPS/CUIDADOS</a>
-            </div>
-            <div class="col">
-                <a class="nav-link item text-black" href="/pages/nosotros.html">NOSOTROS</a>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-    <nav class="navbar navbar-expand-lg menu-container">
-        <div class="container-fluid menu-items">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav container d-flex justify-content-around">
-            <a class="nav-link item text-black" href="#INICIO">INICIO</a>
-            <a class="nav-link item text-black" href="/pages/tienda.html">TIENDA</a>
-            <a class="nav-link item text-black" href="/pages/tips-cuidados.html">TIPS/CUIDADOS</a>
-            <a class="nav-link item text-black" href="/pages/nosotros.html">NOSOTROS</a>
-            </div>
-        </div>
         </div>
     </nav>
 
-    </header>
-<!--Fin del Header-->  
 <!--Comienzo del main-->
     <main>
         
@@ -121,25 +105,25 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-2 col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <a href="/pages/echeverias.html" class="items d-flex justify-content-center">
                     <img src="imagenes-sucu/echeveria-laui.jpg"  alt="Echeveria Laui"></a>
-                    <p class="sub-categorias">ECHEVERIAS</p>
+                    <p class="sub-categorias text-center">ECHEVERIAS</p>
                 </div>
-                <div class="col-sm-12 col-md-2 col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <a href="/pages/crassulas.html" class="items d-flex justify-content-center">
                     <img src="imagenes-sucu/crassula-marnieriana-variegada-2.jpg" alt="Crassula Marneriana Variegada"></a>
-                    <p class="sub-categorias">CRASSULAS</p>
+                    <p class="sub-categorias text-center">CRASSULAS</p>
                 </div>
-                <div class="col-sm-12 col-md-2 col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <a href="/pages/coleccion.html" class="items d-flex justify-content-center">
                     <img src="imagenes-sucu/echeveria-pink-trumpet.jpg" alt="Echeveria Pink Trumpet"></a>
-                    <p class="sub-categorias">COLECCION</p>
+                    <p class="sub-categorias text-center">COLECCION</p>
                 </div>
-                <div class="col-sm-12 col-md-2 col-lg-3">
+                <div class="col-sm-12 col-md-3">
                     <a href="/pages/arreglos.html" class="items d-flex justify-content-center">
                     <img src="imagenes-sucu/arreglo-1.jpg" alt="Arreglo de Suculentas"></a>
-                    <p class="sub-categorias">ARREGLOS</p>
+                    <p class="sub-categorias text-center">ARREGLOS</p>
                 </div>
             </div>
         </div>

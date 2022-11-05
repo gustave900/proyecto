@@ -7,28 +7,16 @@
 
 
 /*BRAND*/
-    .item-logo {
+.brand-logo {
     height: 120px;
     }
 
 
-.item-marca {
+.brand-text {
     color: white;
     font-family: 'Peralta', cursive;
     font-size: 40px;
-    letter-spacing: 1%;
-
     }
-
-.item-marca2 {
-    color: white;
-    font-family: 'Peralta', cursive;
-    font-size: 40px;
-    letter-spacing: 1%;
-    width: auto;
-    margin-right: 100%;
-    padding-right: 0;
-}
 
 /*NavBar*/
 .menu-container {
@@ -253,5 +241,15 @@ h3 {
         padding: 0 1% 0 1%;
         margin-bottom: 4%;
 }
+.brand-logo {
+    height: 60px;
+    }
+
+
+.brand-text {
+    color: white;
+    font-family: 'Peralta', cursive;
+    font-size: 20px;
+    }
 }
 

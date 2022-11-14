@@ -15,3 +15,35 @@
     justify-content: space-around;
     align-items: center;
 }
+
+%titulos {
+    color: nth($colores, 1);
+    font-size: nth($font-size, 9);
+    font-family: 'Peralta', cursive;
+    text-decoration: none;
+    margin: 100px 0 40px 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*Slogan de la marcar en H1 - tema principal e importante*/
+%h1 {
+        color: nth($colores, 1);
+        font-family: 'Caveat', cursive;
+        font-size: nth($font-size, 2);
+        letter-spacing: 1px;
+        word-spacing: 25px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+}
+
+/*Parrafo de la página princial*/
+%parrafo-main {
+    font-family: 'Roboto', sans-serif;
+    font-size: nth($font-size, 1);
+    text-align: justify;
+    font-weight: bold;
+    margin: 10px 120px 35px 120px;
+    text-indent: 5%;
+    line-height: 160%;
+}

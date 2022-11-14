@@ -1,14 +1,46 @@
 @charset "UTF-8";
 /*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
-footer div div {
+footer div div, main h1 {
   display: flex;
   justify-content: center;
 }
 
-footer div {
+footer div, main .link-categorias {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+main .link-categorias {
+  color: black;
+  font-size: 30px;
+  font-family: "Peralta", cursive;
+  text-decoration: none;
+  margin: 100px 0 40px 0;
+  width: 100%;
+  text-align: center;
+}
+
+/*Slogan de la marcar en H1 - tema principal e importante*/
+main h1 {
+  color: black;
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  letter-spacing: 1px;
+  word-spacing: 25px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/*Parrafo de la página princial*/
+main section p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  margin: 10px 120px 35px 120px;
+  text-indent: 5%;
+  line-height: 160%;
 }
 
 main {
@@ -16,9 +48,18 @@ main {
   margin: 0;
   box-sizing: border-box;
 }
-
-/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
-simbolo ($) seguido del nombre que quiera: mas el valor;*/
+main div div div a {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+main div div div p {
+  color: black;
+  font-family: "Peralta", cursive;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+}
 /*Listas*/
 /*Brand responsive - usando boostrap + ccss*/
 header div div p {
@@ -32,6 +73,9 @@ header div div p img {
 header nav {
   border: 3px solid black;
 }
+header nav div div ul li:hover {
+  transform: scale(1.5);
+}
 header nav div div ul li a {
   font-size: 15px;
   letter-spacing: 2px;
@@ -39,18 +83,48 @@ header nav div div ul li a {
   text-decoration: none;
 }
 
-/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
-simbolo ($) seguido del nombre que quiera: mas el valor;*/
 /*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
-footer div div {
+footer div div, main h1 {
   display: flex;
   justify-content: center;
 }
 
-footer div {
+footer div, main .link-categorias {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+main .link-categorias {
+  color: black;
+  font-size: 30px;
+  font-family: "Peralta", cursive;
+  text-decoration: none;
+  margin: 100px 0 40px 0;
+  width: 100%;
+  text-align: center;
+}
+
+/*Slogan de la marcar en H1 - tema principal e importante*/
+main h1 {
+  color: black;
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  letter-spacing: 1px;
+  word-spacing: 25px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/*Parrafo de la página princial*/
+main section p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  margin: 10px 120px 35px 120px;
+  text-indent: 5%;
+  line-height: 160%;
 }
 
 footer div {
@@ -74,18 +148,94 @@ footer div div a {
   line-height: 30px;
 }
 
-/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
-simbolo ($) seguido del nombre que quiera: mas el valor;*/
 /*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
-footer div div {
+main h1, footer div div {
   display: flex;
   justify-content: center;
 }
 
-footer div {
+main .link-categorias, footer div {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+main .link-categorias {
+  color: black;
+  font-size: 30px;
+  font-family: "Peralta", cursive;
+  text-decoration: none;
+  margin: 100px 0 40px 0;
+  width: 100%;
+  text-align: center;
+}
+
+/*Slogan de la marcar en H1 - tema principal e importante*/
+main h1 {
+  color: black;
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  letter-spacing: 1px;
+  word-spacing: 25px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/*Parrafo de la página princial*/
+main section p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  margin: 10px 120px 35px 120px;
+  text-indent: 5%;
+  line-height: 160%;
+}
+
+/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
+simbolo ($) seguido del nombre que quiera: mas el valor;*/
+/*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
+main h1, footer div div {
+  display: flex;
+  justify-content: center;
+}
+
+main .link-categorias, footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .link-categorias {
+  color: black;
+  font-size: 30px;
+  font-family: "Peralta", cursive;
+  text-decoration: none;
+  margin: 100px 0 40px 0;
+  width: 100%;
+  text-align: center;
+}
+
+/*Slogan de la marcar en H1 - tema principal e importante*/
+main h1 {
+  color: black;
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  letter-spacing: 1px;
+  word-spacing: 25px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/*Parrafo de la página princial*/
+main section p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  margin: 10px 120px 35px 120px;
+  text-indent: 5%;
+  line-height: 160%;
 }
 
 /*# sourceMappingURL=style.css.map */

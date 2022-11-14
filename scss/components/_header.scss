@@ -1,0 +1,38 @@
+@import '../base/variables';
+@import '../base/listas';
+
+
+/*Brand responsive - usando boostrap + ccss*/
+
+header {
+    div {
+        div {
+            p {
+                color: $brand-footer;
+                font-family: 'Peralta', cursive;
+                font-size: nth($font-size, 2);
+                img {
+                    height: 120px;
+                }
+            }
+        }
+    }
+
+    nav {
+        border: 3px solid black;
+        div {
+            div {
+                ul {
+                    li {
+                        a{
+                            font-size: nth($font-size, 1);
+                            letter-spacing: 2px;
+                            font-family: 'Peralta', cursive;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

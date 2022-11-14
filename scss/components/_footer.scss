@@ -1,0 +1,29 @@
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/extends';
+
+footer {
+    div {
+        width: 100%;
+        height: 12em;
+        background-color: black;
+        @extend %flexbox2;
+        div {
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            background-color: black;
+            @extend %flexbox;
+            a {
+                font-size: 15px;
+                text-decoration: none;
+                color: $brand-footer;
+                font-family: 'Roboto', sans-serif;
+                letter-spacing: 2px;
+                font-weight: bold;
+                line-height: 30px;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,17 @@
+/* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
+
+%flexbox {
+    display: flex;
+    justify-content: center;
+}
+
+%flexbox1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+%flexbox2 { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,254 +1,91 @@
-/*Reseteo de relleno y borde*/
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+@charset "UTF-8";
+/*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
+footer div div {
+  display: flex;
+  justify-content: center;
 }
 
-
-/*BRAND*/
-.brand-logo {
-    height: 120px;
-    }
-
-
-.brand-text {
-    color: white;
-    font-family: 'Peralta', cursive;
-    font-size: 40px;
-    }
-
-/*NavBar*/
-.menu-container {
-    border: 3px solid black;
+footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.item {
-    font-size: 15px;
-    letter-spacing: 2px;
-    font-family: 'Peralta', cursive;
-    text-decoration: none;
+main {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-/*Slogan de la página, de qué se trata, cual es el tema principal e importante*/
-h1 {
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-family: 'Caveat', cursive;
-    font-size: 35px;
-    letter-spacing: 1px;
-    word-spacing: 25px;
-    margin-top: 100px;
-    margin-bottom: 20px;
+/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
+simbolo ($) seguido del nombre que quiera: mas el valor;*/
+/*Listas*/
+/*Brand responsive - usando boostrap + ccss*/
+header div div p {
+  color: white;
+  font-family: "Peralta", cursive;
+  font-size: 40px;
+}
+header div div p img {
+  height: 120px;
+}
+header nav {
+  border: 3px solid black;
+}
+header nav div div ul li a {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: "Peralta", cursive;
+  text-decoration: none;
 }
 
-
-
-
-
-/*Categorias / Con boostrap y css*/
-
-.link-categorias {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: black;
-    font-size: 30px;
-    font-family: 'Peralta', cursive;
-    text-decoration: none;
-    margin: 120px 0 40px 0;
-    width: 100%;
+/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
+simbolo ($) seguido del nombre que quiera: mas el valor;*/
+/*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
+footer div div {
+  display: flex;
+  justify-content: center;
 }
 
-
-.items {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 10px;
+footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.sub-categorias { 
-    color: black;
-    font-family: 'Peralta', cursive;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    
+footer div {
+  width: 100%;
+  height: 12em;
+  background-color: black;
+}
+footer div div {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-color: black;
+}
+footer div div a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
-.img-px {
-    width: 100%;
-    height: 700px;
-    padding: 0 1% 0 1%;
-    margin-bottom: 8%;
+/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
+simbolo ($) seguido del nombre que quiera: mas el valor;*/
+/*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
+footer div div {
+  display: flex;
+  justify-content: center;
 }
 
-/*Tips y Cuidados Section*/
-
-
-.final-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-
-/*Seguinos en Instragram*/
-.iframe-container{
-    padding: 0 40px 0 40px;
-    margin-bottom: 100px;
-}
-
-
-/*Footer Controls*/
-
-.footer-container {
-    width: 100%;
-    height: 12em;
-    display: flex;
-    background-color: black;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer-items {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    
-}
-
-.footer-text, a {
-    
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2px;
-    font-weight: bold;
-    line-height: 30px;
-}
-
-/*ECHEVERIAS DOCUMENTO.*/
-
-h3 {
-    color: black;
-    font-size: 100px;
-    font-family: 'Peralta', cursive;
-    margin: 100px 0 60px 0;
-}
-
-
-.p-nosotros {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    text-align: justify;
-    font-weight: bold;
-    margin: 10px 120px 35px 120px;
-    text-indent: 5%;
-    line-height: 160%;
-    }
-
-/*Animaciones*/
-.animation-menu:hover {
-    transform: scale(1.5);
-}
-
-/*Parrafos responsive usando media queries / para mobile */
-
-@media only screen and (max-width: 500px){
-    .p-nosotros {
-        font-family: 'Roboto', sans-serif;
-        font-size: 10px;
-        text-align: justify;
-        font-weight: bold;
-        margin: 5px 60px 17px 60px;
-        text-indent: 5%;
-        line-height: 160%;
-    }
-
-    .link-categorias {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        color: black;
-        font-size: 18px;
-        font-family: 'Peralta', cursive;
-        text-decoration: none;
-        margin: 60px 0 15px 0;
-        line-height: 130%;
-        width: auto;
-    }
-
-    .sub-categorias { 
-        color: black;
-        font-family: 'Peralta', cursive;
-        width: 100%;
-        font-size: 10px;
-        margin-bottom: 30px;
-    }
-
-    .final-text {
-        font-family: 'Roboto', sans-serif;
-        font-size: 9px;
-        text-align: center;
-        font-weight: bold;
-        width: 100%;
-    }
-
-    h2 .item-marca {
-        font-size: medium;
-    }
-
-    .footer-container {
-        width: 100%;
-        height: auto;
-        display: flex;
-        background-color: black;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .footer-items {
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        
-    }
-    
-    .footer-text, a {
-        
-        font-size: 8px;
-        text-decoration: none;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 1px;
-        font-weight: bold;
-        line-height: 15px;
-    }
-
-    .img-px {
-        width: 100%;
-        height: auto;
-        padding: 0 1% 0 1%;
-        margin-bottom: 4%;
-}
-.brand-logo {
-    height: 60px;
-    }
-
-
-.brand-text {
-    color: white;
-    font-family: 'Peralta', cursive;
-    font-size: 20px;
-    }
-}
-
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/variables';
+
+main {
+
+        h3 .link-categorias { 
+            @extend %flexbox2;
+            @extend %titulos;
+        }
+
+        
+                
+
+        div {
+            div {
+                div {
+                    .img-px {
+                        width: 100%;
+                        height: 700px;
+                        padding: 0 1% 0 1%;
+                        margin-bottom: 8%;
+                    }
+                }
+                div {
+                    .img-px {
+                        width: 100%;
+                        height: 700px;
+                        padding: 0 1% 0 1%;
+                        margin-bottom: 8%;
+                    }
+                }
+            }
+        }
+}

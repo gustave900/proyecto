@@ -1,4 +1,3 @@
-/* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
 
 %flexbox {
     display: flex;
@@ -26,6 +25,8 @@
     text-align: center;
 }
 
+
+
 /*Slogan de la marcar en H1 - tema principal e importante*/
 %h1 {
         color: nth($colores, 1);
@@ -37,7 +38,7 @@
         margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial*/
+/*Parrafo de la página princial y secciones*/
 %parrafo-main {
     font-family: 'Roboto', sans-serif;
     font-size: nth($font-size, 1);
@@ -80,6 +81,34 @@
     
 }
 
+/*Footer*/
+
+%footer-items {
+    @extend %flexbox;
+    background-color: black;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+%footer-container {
+    @extend %flexbox1;
+    width: 100%;
+    height: 12em;
+    background-color: black;
+    align-items: center;
+}
+
+%footer-text {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
 /*clases*/
 .texto {
     @extend %parrafo-main
@@ -106,4 +135,17 @@
 .sub-titulos {
     @extend %parrafo-subtitulos
 }
+
+.footer-items {
+    @extend %footer-items
+}
+
+.footer-container { 
+    @extend %footer-container
+}
+
+.footer-text a {
+    @extend %footer-text
+}
+
 

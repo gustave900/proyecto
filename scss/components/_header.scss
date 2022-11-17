@@ -39,10 +39,16 @@ header {
         }
     }
     @media only screen and (max-width:500px) {
-        color: nth($colores, 2);
-        font-family: 'Peralta', cursive;
-        font-size: nth($font-size, 7);
-        height: 60px;
+        
+        img { 
+            height: 60px;
+        }
+        p {
+            color: nth($colores, 2);
+            font-family: 'Peralta', cursive;
+            font-size: nth($font-size, 7);
+        }
+        
                 
 }
 }

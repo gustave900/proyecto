@@ -1,8 +1,13 @@
 @charset "UTF-8";
-/*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
-footer div div, main h1 {
+/*Listas*/
+footer div div, main h1, .footer-items {
   display: flex;
   justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 footer div, .titulos-tienda, .titulos {
@@ -32,7 +37,7 @@ main h1 {
   margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial*/
+/*Parrafo de la página princial y secciones*/
 main section p, .texto {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -71,6 +76,31 @@ main section p, .texto {
   padding: 0 5% 0 5%;
 }
 
+/*Footer*/
+.footer-items {
+  background-color: black;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  height: 12em;
+  background-color: black;
+  align-items: center;
+}
+
+.footer-text a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
 /*clases*/
 main div div div a {
   width: 100%;
@@ -84,10 +114,15 @@ main div div div p {
   font-size: 16px;
   font-weight: bold;
 }
-/*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
-footer div div, main h1 {
+/*Listas*/
+footer div div, .footer-items, main h1 {
   display: flex;
   justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 footer div, .titulos, .titulos-tienda {
@@ -117,7 +152,7 @@ main h1 {
   margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial*/
+/*Parrafo de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -154,6 +189,31 @@ main h1 {
   font-weight: bold;
   line-height: 160%;
   padding: 0 5% 0 5%;
+}
+
+/*Footer*/
+.footer-items {
+  background-color: black;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  height: 12em;
+  background-color: black;
+  align-items: center;
+}
+
+.footer-text a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 /*clases*/
@@ -179,18 +239,25 @@ header nav div div ul li a {
   text-decoration: none;
 }
 @media only screen and (max-width: 500px) {
-  header {
+  header img {
+    height: 60px;
+  }
+  header p {
     color: white;
     font-family: "Peralta", cursive;
     font-size: 20px;
-    height: 60px;
   }
 }
 
-/*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
-footer div div, main h1 {
+/*Listas*/
+footer div div, .footer-items, main h1 {
   display: flex;
   justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 footer div, .titulos, .titulos-tienda {
@@ -220,7 +287,7 @@ main h1 {
   margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial*/
+/*Parrafo de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -257,6 +324,31 @@ main h1 {
   font-weight: bold;
   line-height: 160%;
   padding: 0 5% 0 5%;
+}
+
+/*Footer*/
+.footer-items {
+  background-color: black;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  height: 12em;
+  background-color: black;
+  align-items: center;
+}
+
+.footer-text a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 /*clases*/
@@ -281,10 +373,15 @@ footer div div a {
   line-height: 30px;
 }
 
-/*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
-main h1, footer div div {
+/*Listas*/
+.footer-items, main h1, footer div div {
   display: flex;
   justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 .titulos, .titulos-tienda, footer div {
@@ -314,7 +411,7 @@ main h1 {
   margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial*/
+/*Parrafo de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -351,6 +448,31 @@ main h1 {
   font-weight: bold;
   line-height: 160%;
   padding: 0 5% 0 5%;
+}
+
+/*Footer*/
+.footer-items {
+  background-color: black;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  height: 12em;
+  background-color: black;
+  align-items: center;
+}
+
+.footer-text a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 /*clases*/
@@ -370,10 +492,15 @@ main div div div .img-px {
 
 /*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
 simbolo ($) seguido del nombre que quiera: mas el valor;*/
-/*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
-main h1, footer div div {
+/*Listas*/
+.footer-items, main h1, footer div div {
   display: flex;
   justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 .titulos, .titulos-tienda, footer div {
@@ -403,7 +530,7 @@ main h1 {
   margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial*/
+/*Parrafo de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -440,13 +567,43 @@ main h1 {
   font-weight: bold;
   line-height: 160%;
   padding: 0 5% 0 5%;
+}
+
+/*Footer*/
+.footer-items {
+  background-color: black;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  height: 12em;
+  background-color: black;
+  align-items: center;
+}
+
+.footer-text a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 /*clases*/
-/*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
-main h1, footer div div {
+/*Listas*/
+.footer-items, main h1, footer div div {
   display: flex;
   justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
 }
 
 .titulos, .titulos-tienda, footer div {
@@ -476,7 +633,7 @@ main h1 {
   margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial*/
+/*Parrafo de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -513,6 +670,31 @@ main h1 {
   font-weight: bold;
   line-height: 160%;
   padding: 0 5% 0 5%;
+}
+
+/*Footer*/
+.footer-items {
+  background-color: black;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  height: 12em;
+  background-color: black;
+  align-items: center;
+}
+
+.footer-text a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 30px;
 }
 
 /*clases*/

@@ -5,13 +5,13 @@ footer div div, main h1 {
   justify-content: center;
 }
 
-main h3 .link-categorias, footer div, main .link-categorias {
+footer div, .titulos-tienda, .titulos {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main h3 .link-categorias, main .link-categorias {
+.titulos-tienda, .titulos {
   color: black;
   font-size: 30px;
   font-family: "Peralta", cursive;
@@ -33,7 +33,7 @@ main h1 {
 }
 
 /*Parrafo de la página princial*/
-main div div .p-nosotros, main section p {
+main section p, .texto {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: justify;
@@ -43,11 +43,35 @@ main div div .p-nosotros, main section p {
   line-height: 160%;
 }
 
-main {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.texto-tienda {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
 }
+
+.texto-con-sangria {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0;
+  text-indent: 5%;
+}
+
+.sub-titulos {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
+}
+
+/*clases*/
 main div div div a {
   width: 100%;
   height: 300px;
@@ -66,13 +90,13 @@ footer div div, main h1 {
   justify-content: center;
 }
 
-main h3 .link-categorias, footer div, main .link-categorias {
+footer div, .titulos, .titulos-tienda {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main h3 .link-categorias, main .link-categorias {
+.titulos, .titulos-tienda {
   color: black;
   font-size: 30px;
   font-family: "Peralta", cursive;
@@ -94,7 +118,7 @@ main h1 {
 }
 
 /*Parrafo de la página princial*/
-main div div .p-nosotros, main section p {
+.texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: justify;
@@ -104,6 +128,35 @@ main div div .p-nosotros, main section p {
   line-height: 160%;
 }
 
+.texto-tienda {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
+}
+
+.texto-con-sangria {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0;
+  text-indent: 5%;
+}
+
+.sub-titulos {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
+}
+
+/*clases*/
 /*Brand responsive - usando boostrap + ccss*/
 header div div p {
   color: white;
@@ -125,6 +178,14 @@ header nav div div ul li a {
   font-family: "Peralta", cursive;
   text-decoration: none;
 }
+@media only screen and (max-width: 500px) {
+  header {
+    color: white;
+    font-family: "Peralta", cursive;
+    font-size: 20px;
+    height: 60px;
+  }
+}
 
 /*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
 footer div div, main h1 {
@@ -132,13 +193,13 @@ footer div div, main h1 {
   justify-content: center;
 }
 
-main h3 .link-categorias, footer div, main .link-categorias {
+footer div, .titulos, .titulos-tienda {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main h3 .link-categorias, main .link-categorias {
+.titulos, .titulos-tienda {
   color: black;
   font-size: 30px;
   font-family: "Peralta", cursive;
@@ -160,7 +221,7 @@ main h1 {
 }
 
 /*Parrafo de la página princial*/
-main div div .p-nosotros, main section p {
+.texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: justify;
@@ -170,6 +231,35 @@ main div div .p-nosotros, main section p {
   line-height: 160%;
 }
 
+.texto-tienda {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
+}
+
+.texto-con-sangria {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0;
+  text-indent: 5%;
+}
+
+.sub-titulos {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
+}
+
+/*clases*/
 footer div {
   width: 100%;
   height: 12em;
@@ -197,13 +287,13 @@ main h1, footer div div {
   justify-content: center;
 }
 
-main h3 .link-categorias, main .link-categorias, footer div {
+.titulos, .titulos-tienda, footer div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main h3 .link-categorias, main .link-categorias {
+.titulos, .titulos-tienda {
   color: black;
   font-size: 30px;
   font-family: "Peralta", cursive;
@@ -225,7 +315,7 @@ main h1 {
 }
 
 /*Parrafo de la página princial*/
-main div div .p-nosotros, main section p {
+.texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: justify;
@@ -235,6 +325,35 @@ main div div .p-nosotros, main section p {
   line-height: 160%;
 }
 
+.texto-tienda {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
+}
+
+.texto-con-sangria {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0;
+  text-indent: 5%;
+}
+
+.sub-titulos {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
+}
+
+/*clases*/
 /*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
 simbolo ($) seguido del nombre que quiera: mas el valor;*/
 main div div div .img-px {
@@ -246,7 +365,6 @@ main div div div .img-px {
 main div div div .img-px {
   width: 100%;
   height: 700px;
-  padding: 0 1% 0 1%;
   margin-bottom: 8%;
 }
 
@@ -258,13 +376,13 @@ main h1, footer div div {
   justify-content: center;
 }
 
-main .link-categorias, footer div, main h3 .link-categorias {
+.titulos, .titulos-tienda, footer div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main .link-categorias, main h3 .link-categorias {
+.titulos, .titulos-tienda {
   color: black;
   font-size: 30px;
   font-family: "Peralta", cursive;
@@ -286,7 +404,7 @@ main h1 {
 }
 
 /*Parrafo de la página princial*/
-main div div .p-nosotros, main section p {
+.texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: justify;
@@ -296,19 +414,48 @@ main div div .p-nosotros, main section p {
   line-height: 160%;
 }
 
+.texto-tienda {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
+}
+
+.texto-con-sangria {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0;
+  text-indent: 5%;
+}
+
+.sub-titulos {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
+}
+
+/*clases*/
 /*Listas*/ /* % este es el simbolo de las extensiones - se le llama PLACEHOLDER */
 main h1, footer div div {
   display: flex;
   justify-content: center;
 }
 
-main .link-categorias, footer div, main h3 .link-categorias {
+.titulos, .titulos-tienda, footer div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-main .link-categorias, main h3 .link-categorias {
+.titulos, .titulos-tienda {
   color: black;
   font-size: 30px;
   font-family: "Peralta", cursive;
@@ -330,7 +477,7 @@ main h1 {
 }
 
 /*Parrafo de la página princial*/
-main div div .p-nosotros, main section p {
+.texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: justify;
@@ -338,6 +485,41 @@ main div div .p-nosotros, main section p {
   margin: 10px 120px 35px 120px;
   text-indent: 5%;
   line-height: 160%;
+}
+
+.texto-tienda {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
+}
+
+.texto-con-sangria {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0;
+  text-indent: 5%;
+}
+
+.sub-titulos {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0 5% 0 5%;
+}
+
+/*clases*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */

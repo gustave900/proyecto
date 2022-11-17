@@ -2,19 +2,12 @@
 @import '../base/extends';
 
 main {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 
     h1 {
         @extend %flexbox;
         @extend %h1;
     }
 
-    .link-categorias { 
-        @extend %flexbox2;
-        @extend %titulos;
-    }
 
     div {
         div {
@@ -39,6 +32,5 @@ main {
             @extend %parrafo-main;
         }
     }
-}
-    
+} 
 

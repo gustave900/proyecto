@@ -1,13 +1,4 @@
 @import '../base/listas';
 @import '../base/extends';
 
-main {
 
-    div {
-        div {
-            .p-nosotros {
-                @extend %parrafo-main;
-            }
-        }
-    }
-}

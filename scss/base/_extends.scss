@@ -1,3 +1,9 @@
+@import 'listas';
+
+
+%logo {
+    height: 60px;
+}
 
 %flexbox {
     display: flex;
@@ -38,7 +44,14 @@
         margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial y secciones*/
+/*Enlaces de las categorias en página principal*/
+%categorrias-link {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+/*Parrafos y subtitulos de la página princial y secciones*/
 %parrafo-main {
     font-family: 'Roboto', sans-serif;
     font-size: nth($font-size, 1);
@@ -85,31 +98,35 @@
 
 %footer-items {
     @extend %flexbox;
-    background-color: black;
+    background-color: nth($colores, 1);
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
 %footer-container {
-    @extend %flexbox1;
+    @extend %flexbox2;
     width: 100%;
     height: 12em;
-    background-color: black;
+    background-color: nth($colores, 1);
     align-items: center;
+    flex-wrap: wrap;
 }
 
 %footer-text {
-    font-size: 15px;
+    font-size: nth($font-size, 1);
     text-decoration: none;
-    color: white;
+    color: nth($colores, 2);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
     font-weight: bold;
     line-height: 30px;
+    background-color: nth($colores, 1);
+    width: 100%;
+    @extend %flexbox;
 }
 
-/*clases*/
+
 .texto {
     @extend %parrafo-main
 }
@@ -136,16 +153,11 @@
     @extend %parrafo-subtitulos
 }
 
-.footer-items {
-    @extend %footer-items
+
+.logo {
+    @extend %logo
 }
 
-.footer-container { 
-    @extend %footer-container
+.categorias-link { 
+    @extend %categorrias-link
 }
-
-.footer-text a {
-    @extend %footer-text
-}
-
-

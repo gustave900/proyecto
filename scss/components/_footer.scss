@@ -3,26 +3,49 @@
 
 footer {
     div {
-        width: 100%;
-        height: 12em;
-        background-color: black;
-        @extend %flexbox2;
+        @extend %footer-container;
             div {
-            width: 100%;
-            height: 100%;
-            flex-direction: column;
-            background-color: black;
-            @extend %flexbox;
+            @extend %footer-items;
                 a {
-                    font-size: nth($font-size, 1);
-                    text-decoration: none;
-                    color: nth($colores, 2);
-                    font-family: 'Roboto', sans-serif;
-                    letter-spacing: 2px;
-                    font-weight: bold;
-                    line-height: 30px;
+                @extend %footer-text;
             }
         }
         
     }
+
+@media only screen and (max-width: 500px) {
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        div {
+            width: 100%;
+            height: auto;
+            display: flex;
+            background-color: black;
+            justify-content: space-around;
+            align-items: center;
+            div{
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+                a {
+                    font-size: 8px;
+                    text-decoration: none;
+                    color: white;
+                    font-family: 'Roboto', sans-serif;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}
 }

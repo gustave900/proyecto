@@ -1,16 +1,16 @@
 @charset "UTF-8";
 /*Listas*/
-footer div div, main h1, .footer-items {
+/*Listas*/
+.logo {
+  height: 60px;
+}
+
+main h1, footer div div a, footer div div {
   display: flex;
   justify-content: center;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-footer div, .titulos-tienda, .titulos {
+.titulos-tienda, .titulos, footer div {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -37,7 +37,14 @@ main h1 {
   margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial y secciones*/
+/*Enlaces de las categorias en página principal*/
+main div div div a .categorias-link, .categorias-link {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+/*Parrafos y subtitulos de la página princial y secciones*/
 main section p, .texto {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -77,21 +84,22 @@ main section p, .texto {
 }
 
 /*Footer*/
-.footer-items {
+footer div div {
   background-color: black;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.footer-container {
+footer div {
   width: 100%;
   height: 12em;
   background-color: black;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.footer-text a {
+footer div div a {
   font-size: 15px;
   text-decoration: none;
   color: white;
@@ -99,14 +107,12 @@ main section p, .texto {
   letter-spacing: 2px;
   font-weight: bold;
   line-height: 30px;
+  background-color: black;
+  width: 100%;
 }
 
-/*clases*/
-main div div div a {
-  width: 100%;
-  height: 300px;
-  margin-bottom: 10px;
-}
+/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
+simbolo ($) seguido del nombre que quiera: mas el valor;*/
 main div div div p {
   color: black;
   font-family: "Peralta", cursive;
@@ -115,14 +121,14 @@ main div div div p {
   font-weight: bold;
 }
 /*Listas*/
-footer div div, .footer-items, main h1 {
-  display: flex;
-  justify-content: center;
+/*Listas*/
+.logo {
+  height: 60px;
 }
 
-.footer-container {
+footer div div, footer div div a, main h1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 footer div, .titulos, .titulos-tienda {
@@ -152,7 +158,14 @@ main h1 {
   margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial y secciones*/
+/*Enlaces de las categorias en página principal*/
+.categorias-link, main div div div a .categorias-link {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+/*Parrafos y subtitulos de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -192,21 +205,22 @@ main h1 {
 }
 
 /*Footer*/
-.footer-items {
+footer div div {
   background-color: black;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.footer-container {
+footer div {
   width: 100%;
   height: 12em;
   background-color: black;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.footer-text a {
+footer div div a {
   font-size: 15px;
   text-decoration: none;
   color: white;
@@ -214,14 +228,17 @@ main h1 {
   letter-spacing: 2px;
   font-weight: bold;
   line-height: 30px;
+  background-color: black;
+  width: 100%;
 }
 
-/*clases*/
+/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
+simbolo ($) seguido del nombre que quiera: mas el valor;*/
 /*Brand responsive - usando boostrap + ccss*/
 header div div p {
   color: white;
   font-family: "Peralta", cursive;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 header div div p img {
   height: 120px;
@@ -238,26 +255,32 @@ header nav div div ul li a {
   font-family: "Peralta", cursive;
   text-decoration: none;
 }
-@media only screen and (max-width: 500px) {
-  header img {
-    height: 60px;
-  }
-  header p {
+@media only screen and (max-width: 600px) {
+  header .brand {
+    display: flex;
+    justify-content: center;
     color: white;
     font-family: "Peralta", cursive;
     font-size: 20px;
   }
+  header .brand-text {
+    display: flex;
+    justify-items: center;
+  }
+  header .brand-logo {
+    height: 60px;
+  }
 }
 
 /*Listas*/
-footer div div, .footer-items, main h1 {
-  display: flex;
-  justify-content: center;
+/*Listas*/
+.logo {
+  height: 60px;
 }
 
-.footer-container {
+footer div div, footer div div a, main h1 {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 footer div, .titulos, .titulos-tienda {
@@ -287,7 +310,14 @@ main h1 {
   margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial y secciones*/
+/*Enlaces de las categorias en página principal*/
+.categorias-link, main div div div a .categorias-link {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+/*Parrafos y subtitulos de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -327,42 +357,21 @@ main h1 {
 }
 
 /*Footer*/
-.footer-items {
+footer div div {
   background-color: black;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.footer-container {
-  width: 100%;
-  height: 12em;
-  background-color: black;
-  align-items: center;
-}
-
-.footer-text a {
-  font-size: 15px;
-  text-decoration: none;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
-  font-weight: bold;
-  line-height: 30px;
-}
-
-/*clases*/
 footer div {
   width: 100%;
   height: 12em;
   background-color: black;
+  align-items: center;
+  flex-wrap: wrap;
 }
-footer div div {
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  background-color: black;
-}
+
 footer div div a {
   font-size: 15px;
   text-decoration: none;
@@ -371,17 +380,55 @@ footer div div a {
   letter-spacing: 2px;
   font-weight: bold;
   line-height: 30px;
+  background-color: black;
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  footer footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+  }
+  footer footer div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer footer div div {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  footer footer div div a {
+    font-size: 8px;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 15px;
+  }
 }
 
 /*Listas*/
-.footer-items, main h1, footer div div {
-  display: flex;
-  justify-content: center;
+/*Listas*/
+.logo {
+  height: 60px;
 }
 
-.footer-container {
+main h1, footer div div, footer div div a {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .titulos, .titulos-tienda, footer div {
@@ -411,7 +458,14 @@ main h1 {
   margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial y secciones*/
+/*Enlaces de las categorias en página principal*/
+.categorias-link, main div div div a .categorias-link {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+/*Parrafos y subtitulos de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -451,21 +505,22 @@ main h1 {
 }
 
 /*Footer*/
-.footer-items {
+footer div div {
   background-color: black;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.footer-container {
+footer div {
   width: 100%;
   height: 12em;
   background-color: black;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.footer-text a {
+footer div div a {
   font-size: 15px;
   text-decoration: none;
   color: white;
@@ -473,9 +528,10 @@ main h1 {
   letter-spacing: 2px;
   font-weight: bold;
   line-height: 30px;
+  background-color: black;
+  width: 100%;
 }
 
-/*clases*/
 /*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
 simbolo ($) seguido del nombre que quiera: mas el valor;*/
 main div div div .img-px {
@@ -493,117 +549,14 @@ main div div div .img-px {
 /*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
 simbolo ($) seguido del nombre que quiera: mas el valor;*/
 /*Listas*/
-.footer-items, main h1, footer div div {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.titulos, .titulos-tienda, footer div {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.titulos, .titulos-tienda {
-  color: black;
-  font-size: 30px;
-  font-family: "Peralta", cursive;
-  text-decoration: none;
-  margin: 100px 0 40px 0;
-  width: 100%;
-  text-align: center;
-}
-
-/*Slogan de la marcar en H1 - tema principal e importante*/
-main h1 {
-  color: black;
-  font-family: "Caveat", cursive;
-  font-size: 40px;
-  letter-spacing: 1px;
-  word-spacing: 25px;
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
-
-/*Parrafo de la página princial y secciones*/
-.texto, main section p {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
-  margin: 10px 120px 35px 120px;
-  text-indent: 5%;
-  line-height: 160%;
-}
-
-.texto-tienda {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
-  line-height: 160%;
-  padding: 0 5% 0 5%;
-}
-
-.texto-con-sangria {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
-  line-height: 160%;
-  padding: 0;
-  text-indent: 5%;
-}
-
-.sub-titulos {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
-  line-height: 160%;
-  padding: 0 5% 0 5%;
-}
-
-/*Footer*/
-.footer-items {
-  background-color: black;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
-
-.footer-container {
-  width: 100%;
-  height: 12em;
-  background-color: black;
-  align-items: center;
-}
-
-.footer-text a {
-  font-size: 15px;
-  text-decoration: none;
-  color: white;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
-  font-weight: bold;
-  line-height: 30px;
-}
-
-/*clases*/
 /*Listas*/
-.footer-items, main h1, footer div div {
-  display: flex;
-  justify-content: center;
+.logo {
+  height: 60px;
 }
 
-.footer-container {
+main h1, footer div div, footer div div a {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .titulos, .titulos-tienda, footer div {
@@ -633,7 +586,14 @@ main h1 {
   margin-bottom: 20px;
 }
 
-/*Parrafo de la página princial y secciones*/
+/*Enlaces de las categorias en página principal*/
+.categorias-link, main div div div a .categorias-link {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+/*Parrafos y subtitulos de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -673,21 +633,22 @@ main h1 {
 }
 
 /*Footer*/
-.footer-items {
+footer div div {
   background-color: black;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
 
-.footer-container {
+footer div {
   width: 100%;
   height: 12em;
   background-color: black;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.footer-text a {
+footer div div a {
   font-size: 15px;
   text-decoration: none;
   color: white;
@@ -695,9 +656,11 @@ main h1 {
   letter-spacing: 2px;
   font-weight: bold;
   line-height: 30px;
+  background-color: black;
+  width: 100%;
 }
 
-/*clases*/
+/*Reset*/
 * {
   margin: 0;
   padding: 0;

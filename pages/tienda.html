@@ -23,24 +23,25 @@
 <body>
 <!--Comienzo de Header-->
     <header>
-<!--BRAND Responsive/ usando patrón de bootstrap y complementando estilos con css-->
-        <div class="container-fluid mw-100 bg-black pt-3">
-            <div class="row w-100">
-                <p class="col-sm-12 col-sm-12 brand-text mw-100 mr-5 d-flex justify-content-center align-items-center">HOJAS <img src="../imagenessucu/logopng.png" class="brand-logo shake-slow shake-constant" alt="">RECHONCHAS</p>
+    <!--BRAND Responsive/ usando patrón de bootstrap y complementando estilos con css-->
+        <div class="container mw-100 bg-black pt-3">
+            <div class="row">
+            <p class="col-sm-12 col-sm-12 brand brand-text mw-100 mr-5 d-flex justify-content-center align-items-center">HOJAS<img src="../imagenessucu/logopng.png" class="brand-logo shake-slow shake-constant" alt="">RECHONCHAS</p>
             </div>
         </div>
-
-<!--NAVBAR Responsive-->
-        <nav class="navbar navbar-expand-sm bg-light menu-container mw-100" id="inicio">
+    
+    <!--NAVBAR Responsive + animaciones de transición-->
+    
+        <nav class="navbar navbar-expand-sm menu-container w-100" id="inicio">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
                 <div class="collapse navbar-collapse text-center" id="opciones">
-                    <ul class="navbar-nav container-fluid w-100 d-flex justify-content-around">
+                    <ul class="navbar-nav container-fluid d-flex justify-content-around">
                         <li class="nav-item animation-menu">
-                            <a class="nav-link item text-black" aria-current="page" href="../index.html">HOME</a>
+                            <a class="nav-link item text-black" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item animation-menu">
                             <a class="nav-link item text-black" href="tienda.html">TIENDA</a>
@@ -56,6 +57,7 @@
             </div>
         </nav>
     </header>
+
 <!--Main comienzo-->
     <main>
         <h3 class="titulos" data-aos="zoom-in-up">CATEGORIAS</h3>
@@ -65,28 +67,28 @@
                 <div class="col-sm-12 col-md-3" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                    <a href="echeverias.html" class="items d-flex justify-content-center">
+                    <a href="echeverias.html" class="items d-flex justify-content-center categorias-link">
                     <img src="../imagenessucu/romeorubin.jpg"  alt="Echeveria Romeo Ruubin"></a>
                     <p class="sub-categorias text-center">ECHEVERIAS</p>
                 </div>
                 <div class="col-sm-12 col-md-3" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                    <a href="crassulas.html" class="items d-flex justify-content-center">
+                    <a href="crassulas.html" class="items d-flex justify-content-center categorias-link">
                     <img src="../imagenessucu/crassulamarnierianavariegada2.jpg" alt="Crassula Marneriana Variegada"></a>
                     <p class="sub-categorias text-center">CRASSULAS</p>
                 </div>
                 <div class="col-sm-12 col-md-3" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                    <a href="coleccion.html" class="items d-flex justify-content-center">
+                    <a href="coleccion.html" class="items d-flex justify-content-center categorias-link">
                     <img src="../imagenessucu/echeveriaraindrops.jpg" alt="Echeveria Raindrops"></a>
                     <p class="sub-categorias text-center">COLECCION</p>
                 </div>
                 <div class="col-sm-12 col-md-3" data-aos="fade-right"
                 data-aos-offset="300"
                 data-aos-easing="ease-in-sine">
-                    <a href="arreglos.html" class="items d-flex justify-content-center">
+                    <a href="arreglos.html" class="items d-flex justify-content-center categorias-link">
                     <img src="../imagenessucu/arreglo2.jpg" alt="Arreglo de Suculentas"></a>
                     <p class="sub-categorias text-center">ARREGLOS</p>
                 </div>

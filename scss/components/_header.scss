@@ -1,5 +1,6 @@
 @import '../base/listas';
 @import '../base/extends';
+@import '../base/variables';
 
 
 /*Brand responsive - usando boostrap + ccss*/
@@ -10,13 +11,14 @@ header {
             p {
                 color: nth($colores, 2);
                 font-family: 'Peralta', cursive;
-                font-size: nth($font-size, 2);
+                font-size: 2.5em;
                 img {
                     height: 120px;
                 }
             }
         }
     }
+    
 
     nav {
         border: 3px solid black;
@@ -38,17 +40,23 @@ header {
             }
         }
     }
-    @media only screen and (max-width:500px) {
-        
-        img { 
-            height: 60px;
-        }
-        p {
-            color: nth($colores, 2);
-            font-family: 'Peralta', cursive;
-            font-size: nth($font-size, 7);
-        }
-        
-                
-}
+
+@media only screen and (max-width: 600px){
+
+                .brand {
+                    display: flex;
+                    justify-content: center;
+                    color: white;
+                    font-family: 'Peralta', cursive;
+                    font-size: 20px;
+                    }
+                    .brand-text {
+                        display: flex;
+                        justify-items: center;
+                    }
+
+                        .brand-logo {
+                            height: 60px;
+                            }
+    }
 }

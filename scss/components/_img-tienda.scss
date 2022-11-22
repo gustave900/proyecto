@@ -9,15 +9,7 @@ main {
                 margin-bottom: 5%;
                 .img-px {
                     width: 100%;
-                    height: 700px;
-                    padding: 0 1% 0 1%;
-                }
-            }
-            div {
-                margin-bottom: 5%;
-                .img-px {
-                    width: 100%;
-                    height: 700px;
+                    height: 100%;
                     padding: 0 1% 0 1%;
                 }
             }
@@ -27,6 +19,7 @@ main {
         .img-px {
             width: 100%;
             height: 100%;
+            object-fit: cover;
             padding: 0 1% 0 1%;
             margin-bottom: 4%;
             display: flex;

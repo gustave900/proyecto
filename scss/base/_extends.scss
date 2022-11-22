@@ -20,7 +20,7 @@
     justify-content: space-around;
     align-items: center;
 }
-
+/*Titulos y subtitulos*/
 %titulos {
     color: nth($colores, 1);
     font-size: nth($font-size, 9);
@@ -51,7 +51,7 @@
     margin-bottom: 10px;
 }
 
-/*Parrafos y subtitulos de la página princial y secciones*/
+/*Parrafos de la página princial y secciones*/
 %parrafo-main {
     font-family: 'Roboto', sans-serif;
     font-size: nth($font-size, 1);

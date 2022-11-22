@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*Listas*/
-/*Listas*/
 .logo {
   height: 60px;
 }
@@ -16,6 +14,7 @@ main h1, footer div div a, footer div div {
   align-items: center;
 }
 
+/*Titulos y subtitulos*/
 .titulos-tienda, .titulos {
   color: black;
   font-size: 30px;
@@ -44,7 +43,7 @@ main div div div a .categorias-link, .categorias-link {
   margin-bottom: 10px;
 }
 
-/*Parrafos y subtitulos de la página princial y secciones*/
+/*Parrafos de la página princial y secciones*/
 main section p, .texto {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -120,8 +119,6 @@ main div div div p {
   font-size: 16px;
   font-weight: bold;
 }
-/*Listas*/
-/*Listas*/
 .logo {
   height: 60px;
 }
@@ -137,6 +134,7 @@ footer div, .titulos, .titulos-tienda {
   align-items: center;
 }
 
+/*Titulos y subtitulos*/
 .titulos, .titulos-tienda {
   color: black;
   font-size: 30px;
@@ -165,7 +163,7 @@ main h1 {
   margin-bottom: 10px;
 }
 
-/*Parrafos y subtitulos de la página princial y secciones*/
+/*Parrafos de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -272,8 +270,6 @@ header nav div div ul li a {
   }
 }
 
-/*Listas*/
-/*Listas*/
 .logo {
   height: 60px;
 }
@@ -289,6 +285,7 @@ footer div, .titulos, .titulos-tienda {
   align-items: center;
 }
 
+/*Titulos y subtitulos*/
 .titulos, .titulos-tienda {
   color: black;
   font-size: 30px;
@@ -317,7 +314,7 @@ main h1 {
   margin-bottom: 10px;
 }
 
-/*Parrafos y subtitulos de la página princial y secciones*/
+/*Parrafos de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -420,8 +417,6 @@ footer div div a {
   }
 }
 
-/*Listas*/
-/*Listas*/
 .logo {
   height: 60px;
 }
@@ -437,6 +432,7 @@ main h1, footer div div, footer div div a {
   align-items: center;
 }
 
+/*Titulos y subtitulos*/
 .titulos, .titulos-tienda {
   color: black;
   font-size: 30px;
@@ -465,7 +461,7 @@ main h1 {
   margin-bottom: 10px;
 }
 
-/*Parrafos y subtitulos de la página princial y secciones*/
+/*Parrafos de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -539,21 +535,14 @@ main div div div {
 }
 main div div div .img-px {
   width: 100%;
-  height: 700px;
-  padding: 0 1% 0 1%;
-}
-main div div div {
-  margin-bottom: 5%;
-}
-main div div div .img-px {
-  width: 100%;
-  height: 700px;
+  height: 100%;
   padding: 0 1% 0 1%;
 }
 @media only screen and (max-width: 500px) {
   main .img-px {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     padding: 0 1% 0 1%;
     margin-bottom: 4%;
     display: flex;
@@ -563,8 +552,6 @@ main div div div .img-px {
 
 /*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
 simbolo ($) seguido del nombre que quiera: mas el valor;*/
-/*Listas*/
-/*Listas*/
 .logo {
   height: 60px;
 }
@@ -580,6 +567,7 @@ main h1, footer div div, footer div div a {
   align-items: center;
 }
 
+/*Titulos y subtitulos*/
 .titulos, .titulos-tienda {
   color: black;
   font-size: 30px;
@@ -608,7 +596,7 @@ main h1 {
   margin-bottom: 10px;
 }
 
-/*Parrafos y subtitulos de la página princial y secciones*/
+/*Parrafos de la página princial y secciones*/
 .texto, main section p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;

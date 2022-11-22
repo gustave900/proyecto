@@ -255,7 +255,7 @@ header nav div div ul li a {
   font-family: "Peralta", cursive;
   text-decoration: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   header .brand {
     display: flex;
     justify-content: center;
@@ -534,16 +534,31 @@ footer div div a {
 
 /*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
 simbolo ($) seguido del nombre que quiera: mas el valor;*/
-main div div div .img-px {
-  width: 100%;
-  height: 700px;
-  padding: 0 1% 0 1%;
-  margin-bottom: 8%;
+main div div div {
+  margin-bottom: 5%;
 }
 main div div div .img-px {
   width: 100%;
   height: 700px;
-  margin-bottom: 8%;
+  padding: 0 1% 0 1%;
+}
+main div div div {
+  margin-bottom: 5%;
+}
+main div div div .img-px {
+  width: 100%;
+  height: 700px;
+  padding: 0 1% 0 1%;
+}
+@media only screen and (max-width: 500px) {
+  main .img-px {
+    width: 100%;
+    height: 100%;
+    padding: 0 1% 0 1%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-items: center;
+  }
 }
 
 /*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto

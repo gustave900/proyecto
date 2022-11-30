@@ -9,6 +9,9 @@ footer {
                 a {
                 @extend %footer-text;
             }
+                a:hover {
+                    color: #005221;
+                }
         }
         
     }
@@ -37,11 +40,7 @@ footer {
                 height: auto;
                 a {
                     font-size: 8px;
-                    text-decoration: none;
-                    color: white;
-                    font-family: 'Roboto', sans-serif;
                     letter-spacing: 1px;
-                    font-weight: bold;
                     line-height: 15px;
                 }
             }

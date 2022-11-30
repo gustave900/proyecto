@@ -8,14 +8,14 @@ main h1, footer div div a, footer div div {
   justify-content: center;
 }
 
-.titulos-tienda, .titulos, footer div {
+.titulos, footer div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 /*Titulos y subtitulos*/
-.titulos-tienda, .titulos {
+.titulos {
   color: black;
   font-size: 30px;
   font-family: "Peralta", cursive;
@@ -44,23 +44,13 @@ main div div div a .categorias-link, .categorias-link {
 }
 
 /*Parrafos de la página princial y secciones*/
-main section p, .texto {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
-  margin: 10px 120px 35px 120px;
-  text-indent: 5%;
-  line-height: 160%;
-}
-
 .texto-tienda {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: justify;
   font-weight: bold;
   line-height: 160%;
-  padding: 0 5% 0 5%;
+  padding: 0;
 }
 
 .texto-con-sangria {
@@ -75,11 +65,11 @@ main section p, .texto {
 
 .sub-titulos {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
   line-height: 160%;
-  padding: 0 5% 0 5%;
+  padding: 0;
 }
 
 /*Footer*/
@@ -110,8 +100,13 @@ footer div div a {
   width: 100%;
 }
 
-/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
-simbolo ($) seguido del nombre que quiera: mas el valor;*/
+.titulos:hover {
+  color: #005221;
+}
+
+main h3 .titulos:hover {
+  color: #005221;
+}
 main div div div p {
   color: black;
   font-family: "Peralta", cursive;
@@ -119,6 +114,21 @@ main div div div p {
   font-size: 16px;
   font-weight: bold;
 }
+main section p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  padding: 10px 120px 35px 120px;
+  text-indent: 5%;
+  line-height: 160%;
+}
+@media only screen and (max-width: 500px) {
+  main section p {
+    padding: 5px 40px 15px 40px;
+  }
+}
+
 .logo {
   height: 60px;
 }
@@ -128,14 +138,14 @@ footer div div, footer div div a, main h1 {
   justify-content: center;
 }
 
-footer div, .titulos, .titulos-tienda {
+footer div, .titulos {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 /*Titulos y subtitulos*/
-.titulos, .titulos-tienda {
+.titulos {
   color: black;
   font-size: 30px;
   font-family: "Peralta", cursive;
@@ -164,23 +174,13 @@ main h1 {
 }
 
 /*Parrafos de la página princial y secciones*/
-.texto, main section p {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
-  margin: 10px 120px 35px 120px;
-  text-indent: 5%;
-  line-height: 160%;
-}
-
 .texto-tienda {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: justify;
   font-weight: bold;
   line-height: 160%;
-  padding: 0 5% 0 5%;
+  padding: 0;
 }
 
 .texto-con-sangria {
@@ -195,11 +195,11 @@ main h1 {
 
 .sub-titulos {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
   line-height: 160%;
-  padding: 0 5% 0 5%;
+  padding: 0;
 }
 
 /*Footer*/
@@ -230,17 +230,37 @@ footer div div a {
   width: 100%;
 }
 
-/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
-simbolo ($) seguido del nombre que quiera: mas el valor;*/
+.titulos:hover {
+  color: #005221;
+}
+
 /*Brand responsive - usando boostrap + ccss*/
-header div div p {
+div div p {
   color: white;
   font-family: "Peralta", cursive;
   font-size: 2.5em;
 }
-header div div p img {
+div div p img {
   height: 120px;
 }
+@media only screen and (max-width: 500px) {
+  div .brand {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "Peralta", cursive;
+    font-size: 20px;
+    box-sizing: border-box;
+  }
+  div .brand-text {
+    display: flex;
+    justify-items: center;
+  }
+  div .brand-logo {
+    height: 60px;
+  }
+}
+
 header nav {
   border: 3px solid black;
 }
@@ -254,19 +274,10 @@ header nav div div ul li a {
   text-decoration: none;
 }
 @media only screen and (max-width: 500px) {
-  header .brand {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-family: "Peralta", cursive;
-    font-size: 20px;
-  }
-  header .brand-text {
-    display: flex;
-    justify-items: center;
-  }
-  header .brand-logo {
-    height: 60px;
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
   }
 }
 
@@ -279,14 +290,14 @@ footer div div, footer div div a, main h1 {
   justify-content: center;
 }
 
-footer div, .titulos, .titulos-tienda {
+footer div, .titulos {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 /*Titulos y subtitulos*/
-.titulos, .titulos-tienda {
+.titulos {
   color: black;
   font-size: 30px;
   font-family: "Peralta", cursive;
@@ -315,23 +326,13 @@ main h1 {
 }
 
 /*Parrafos de la página princial y secciones*/
-.texto, main section p {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
-  margin: 10px 120px 35px 120px;
-  text-indent: 5%;
-  line-height: 160%;
-}
-
 .texto-tienda {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: justify;
   font-weight: bold;
   line-height: 160%;
-  padding: 0 5% 0 5%;
+  padding: 0;
 }
 
 .texto-con-sangria {
@@ -346,11 +347,11 @@ main h1 {
 
 .sub-titulos {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
   line-height: 160%;
-  padding: 0 5% 0 5%;
+  padding: 0;
 }
 
 /*Footer*/
@@ -381,6 +382,13 @@ footer div div a {
   width: 100%;
 }
 
+.titulos:hover {
+  color: #005221;
+}
+
+footer div div a:hover {
+  color: #005221;
+}
 @media only screen and (max-width: 500px) {
   footer footer {
     width: 100%;
@@ -408,11 +416,7 @@ footer div div a {
   }
   footer footer div div a {
     font-size: 8px;
-    text-decoration: none;
-    color: white;
-    font-family: "Roboto", sans-serif;
     letter-spacing: 1px;
-    font-weight: bold;
     line-height: 15px;
   }
 }
@@ -426,14 +430,14 @@ main h1, footer div div, footer div div a {
   justify-content: center;
 }
 
-.titulos, .titulos-tienda, footer div {
+.titulos, footer div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 /*Titulos y subtitulos*/
-.titulos, .titulos-tienda {
+.titulos {
   color: black;
   font-size: 30px;
   font-family: "Peralta", cursive;
@@ -462,23 +466,13 @@ main h1 {
 }
 
 /*Parrafos de la página princial y secciones*/
-.texto, main section p {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
-  margin: 10px 120px 35px 120px;
-  text-indent: 5%;
-  line-height: 160%;
-}
-
 .texto-tienda {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: justify;
   font-weight: bold;
   line-height: 160%;
-  padding: 0 5% 0 5%;
+  padding: 0;
 }
 
 .texto-con-sangria {
@@ -493,11 +487,11 @@ main h1 {
 
 .sub-titulos {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
   line-height: 160%;
-  padding: 0 5% 0 5%;
+  padding: 0;
 }
 
 /*Footer*/
@@ -528,8 +522,10 @@ footer div div a {
   width: 100%;
 }
 
-/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
-simbolo ($) seguido del nombre que quiera: mas el valor;*/
+.titulos:hover {
+  color: #005221;
+}
+
 main div div div {
   margin-bottom: 5%;
 }
@@ -550,8 +546,6 @@ main div div div .img-px {
   }
 }
 
-/*Variables - Nos permiten reutilizar información o estilos en muchas partes de nuestro proyecto
-simbolo ($) seguido del nombre que quiera: mas el valor;*/
 .logo {
   height: 60px;
 }
@@ -561,14 +555,14 @@ main h1, footer div div, footer div div a {
   justify-content: center;
 }
 
-.titulos, .titulos-tienda, footer div {
+.titulos, footer div {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 /*Titulos y subtitulos*/
-.titulos, .titulos-tienda {
+.titulos {
   color: black;
   font-size: 30px;
   font-family: "Peralta", cursive;
@@ -597,23 +591,13 @@ main h1 {
 }
 
 /*Parrafos de la página princial y secciones*/
-.texto, main section p {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
-  margin: 10px 120px 35px 120px;
-  text-indent: 5%;
-  line-height: 160%;
-}
-
 .texto-tienda {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   text-align: justify;
   font-weight: bold;
   line-height: 160%;
-  padding: 0 5% 0 5%;
+  padding: 0;
 }
 
 .texto-con-sangria {
@@ -628,11 +612,11 @@ main h1 {
 
 .sub-titulos {
   font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  text-align: justify;
-  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
   line-height: 160%;
-  padding: 0 5% 0 5%;
+  padding: 0;
 }
 
 /*Footer*/
@@ -661,6 +645,10 @@ footer div div a {
   line-height: 30px;
   background-color: black;
   width: 100%;
+}
+
+.titulos:hover {
+  color: #005221;
 }
 
 /*Reset*/

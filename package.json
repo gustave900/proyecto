@@ -15,5 +15,8 @@
     "url": "https://github.com/gustave900/proyecto/issues"
   },
   "homepage": "https://github.com/gustave900/proyecto#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "csshake": "^1.7.0"
+  }
 }

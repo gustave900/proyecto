@@ -46,6 +46,9 @@ main {
 
 
 @media only screen and (max-width: 500px) {
+    .titulos {
+        padding: 0 20px;
+    }
     section {
         p { 
             padding: 5px 40px 15px 40px;

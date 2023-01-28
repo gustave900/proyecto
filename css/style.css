@@ -252,3 +252,8 @@ h3 {
     }
 }
 
+color: nth($colores, 1);
+                    font-family: 'Peralta', cursive;
+                    width: 100%;
+                    font-size: nth($font-size, 8);
+                    font-weight: bold;

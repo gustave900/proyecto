@@ -1,0 +1,63 @@
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/variables';
+
+
+/*Brand responsive - usando boostrap + ccss*/
+div {
+        div {
+            p {
+                color: nth($colores, 2);
+                font-family: 'Peralta', cursive;
+                font-size: 2.5em;
+                img {
+                    height: 120px;
+                }
+            }
+        }
+@media only screen and (max-width: 500px){
+            .brand {
+                display: flex;
+                justify-content: center;
+                color: white;
+                font-family: 'Peralta', cursive;
+                font-size: 20px;
+                box-sizing: border-box;
+                }
+                .brand-text {
+                    display: flex;
+                    justify-items: center;
+                }
+                    .brand-logo {
+                        height: 60px;
+                        }
+    }
+}
+
+header {
+    nav {
+        border: 3px solid black;
+        div {
+            div {
+                ul {
+                    li {
+                        &:hover {
+                            transform: scale(1.5);
+                        }
+                        a{
+                            font-size: nth($font-size, 1);
+                            letter-spacing: 2px;
+                            font-family: 'Peralta', cursive;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+@media only screen and (max-width: 500px) {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+}

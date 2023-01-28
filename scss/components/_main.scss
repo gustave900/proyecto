@@ -1,0 +1,59 @@
+@import '../base/listas';
+@import '../base/extends';
+@import '../base/variables';
+
+main {
+
+    h1 {
+        @extend %flexbox;
+        @extend %h1;
+    }
+    
+        h3 { .titulos:hover {
+            color: #005221;
+        }
+    }
+    
+    div {
+        div {
+            div {
+                a {
+                    .categorias-link { 
+                        @extend %categorrias-link
+                    }
+                }
+                p { 
+                    color: nth($colores, 1);
+                    font-family: 'Peralta', cursive;
+                    width: 100%;
+                    font-size: nth($font-size, 8);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    section {
+        p { 
+            font-family: 'Roboto', sans-serif;
+            font-size: nth($font-size, 1);
+            text-align: justify;
+            font-weight: bold;
+            padding: 10px 120px 35px 120px;
+            text-indent: 5%;
+            line-height: 160%;
+        }
+    }
+
+
+@media only screen and (max-width: 500px) {
+    .titulos {
+        padding: 0 20px;
+    }
+    section {
+        p { 
+            padding: 5px 40px 15px 40px;
+        }
+    }
+}
+} 
+

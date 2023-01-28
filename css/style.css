@@ -1,255 +1,450 @@
-/*Reseteo de relleno y borde*/
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+@charset "UTF-8";
+.logo {
+  height: 60px;
 }
 
+main h1, footer div div a, footer div div {
+  display: flex;
+  justify-content: center;
+}
 
-/*BRAND*/
-.brand-logo {
-    height: 120px;
-    }
+.titulos, footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
+/*Titulos y subtitulos*/
+.titulos {
+  color: black;
+  font-size: 30px;
+  font-family: "Peralta", cursive;
+  text-decoration: none;
+  margin-top: 8%;
+  width: 100%;
+  text-align: center;
+}
 
-.brand-text {
+/*Slogan de la marcar en H1 - tema principal e importante*/
+main h1 {
+  color: black;
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  letter-spacing: 1px;
+  word-spacing: 25px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/*Enlaces de las categorias en página principal*/
+main div div div a .categorias-link, .categorias-link {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+/*Parrafos de la página princial y secciones*/
+.texto-tienda {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0;
+}
+
+.texto-con-sangria {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  text-indent: 5%;
+}
+
+.sub-titulos {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
+  line-height: 160%;
+  padding: 0;
+}
+
+/*Footer*/
+footer div div {
+  background-color: black;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+footer div {
+  width: 100%;
+  height: 12em;
+  background-color: black;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer div div a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 30px;
+  background-color: black;
+  width: 100%;
+}
+
+.titulos:hover {
+  color: #005221;
+}
+
+main h3 .titulos:hover {
+  color: #005221;
+}
+main div div div p {
+  color: black;
+  font-family: "Peralta", cursive;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+}
+main section p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  padding: 10px 120px 35px 120px;
+  text-indent: 5%;
+  line-height: 160%;
+}
+@media only screen and (max-width: 500px) {
+  main .titulos {
+    padding: 0 20px;
+  }
+  main section p {
+    padding: 5px 40px 15px 40px;
+  }
+}
+
+.logo {
+  height: 60px;
+}
+
+footer div div, footer div div a, main h1 {
+  display: flex;
+  justify-content: center;
+}
+
+footer div, .titulos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Titulos y subtitulos*/
+.titulos {
+  color: black;
+  font-size: 30px;
+  font-family: "Peralta", cursive;
+  text-decoration: none;
+  margin-top: 8%;
+  width: 100%;
+  text-align: center;
+}
+
+/*Slogan de la marcar en H1 - tema principal e importante*/
+main h1 {
+  color: black;
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  letter-spacing: 1px;
+  word-spacing: 25px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/*Enlaces de las categorias en página principal*/
+.categorias-link, main div div div a .categorias-link {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+/*Parrafos de la página princial y secciones*/
+.texto-tienda {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0;
+}
+
+.texto-con-sangria {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  text-indent: 5%;
+}
+
+.sub-titulos {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
+  line-height: 160%;
+  padding: 0;
+}
+
+/*Footer*/
+footer div div {
+  background-color: black;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+footer div {
+  width: 100%;
+  height: 12em;
+  background-color: black;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer div div a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 30px;
+  background-color: black;
+  width: 100%;
+}
+
+.titulos:hover {
+  color: #005221;
+}
+
+/*Brand responsive - usando boostrap + ccss*/
+div div p {
+  color: white;
+  font-family: "Peralta", cursive;
+  font-size: 2.5em;
+}
+div div p img {
+  height: 120px;
+}
+@media only screen and (max-width: 500px) {
+  div .brand {
+    display: flex;
+    justify-content: center;
     color: white;
-    font-family: 'Peralta', cursive;
-    font-size: 40px;
-    }
-
-/*NavBar*/
-.menu-container {
-    border: 3px solid black;
-}
-
-.item {
-    font-size: 15px;
-    letter-spacing: 2px;
-    font-family: 'Peralta', cursive;
-    text-decoration: none;
-}
-
-
-/*Slogan de la página, de qué se trata, cual es el tema principal e importante*/
-h1 {
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-family: 'Caveat', cursive;
-    font-size: 35px;
-    letter-spacing: 1px;
-    word-spacing: 25px;
-    margin-top: 100px;
-    margin-bottom: 20px;
-}
-
-
-
-
-
-/*Categorias / Con boostrap y css*/
-
-.link-categorias {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: black;
-    font-size: 30px;
-    font-family: 'Peralta', cursive;
-    text-decoration: none;
-    margin: 120px 0 40px 0;
-    width: 100%;
-}
-
-
-.items {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 10px;
-}
-
-.sub-categorias { 
-    color: black;
-    font-family: 'Peralta', cursive;
-    width: 100%;
-    font-size: 16px;
-    font-weight: bold;
-    
-}
-
-.img-px {
-    width: 100%;
-    height: 700px;
-    padding: 0 1% 0 1%;
-    margin-bottom: 8%;
-}
-
-/*Tips y Cuidados Section*/
-
-
-.final-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Peralta", cursive;
     font-size: 20px;
+    box-sizing: border-box;
+  }
+  div .brand-text {
+    display: flex;
+    justify-items: center;
+  }
+  div .brand-logo {
+    height: 60px;
+  }
 }
 
-
-/*Seguinos en Instragram*/
-.iframe-container{
-    padding: 0 40px 0 40px;
-    margin-bottom: 100px;
+header nav {
+  border: 3px solid black;
+}
+header nav div div ul li:hover {
+  transform: scale(1.5);
+}
+header nav div div ul li a {
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: "Peralta", cursive;
+  text-decoration: none;
+}
+@media only screen and (max-width: 500px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
 }
 
+.logo {
+  height: 60px;
+}
 
-/*Footer Controls*/
+footer div div, footer div div a, main h1 {
+  display: flex;
+  justify-content: center;
+}
 
-.footer-container {
+footer div, .titulos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Titulos y subtitulos*/
+.titulos {
+  color: black;
+  font-size: 30px;
+  font-family: "Peralta", cursive;
+  text-decoration: none;
+  margin-top: 8%;
+  width: 100%;
+  text-align: center;
+}
+
+/*Slogan de la marcar en H1 - tema principal e importante*/
+main h1 {
+  color: black;
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  letter-spacing: 1px;
+  word-spacing: 25px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/*Enlaces de las categorias en página principal*/
+.categorias-link, main div div div a .categorias-link {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+/*Parrafos de la página princial y secciones*/
+.texto-tienda {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  padding: 0;
+}
+
+.texto-con-sangria {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 160%;
+  text-indent: 5%;
+}
+
+.sub-titulos {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 900;
+  line-height: 160%;
+  padding: 0;
+}
+
+/*Footer*/
+footer div div {
+  background-color: black;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+footer div {
+  width: 100%;
+  height: 12em;
+  background-color: black;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer div div a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 30px;
+  background-color: black;
+  width: 100%;
+}
+
+.titulos:hover {
+  color: #005221;
+}
+
+footer div div a:hover {
+  color: #005221;
+}
+@media only screen and (max-width: 500px) {
+  footer footer {
     width: 100%;
-    height: 12em;
+    height: auto;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+  }
+  footer footer div {
+    width: 100%;
+    height: auto;
     display: flex;
     background-color: black;
     justify-content: space-around;
     align-items: center;
-}
-
-.footer-items {
+  }
+  footer footer div div {
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100%;
-    
+    height: auto;
+  }
+  footer footer div div a {
+    font-size: 8px;
+    letter-spacing: 1px;
+    line-height: 15px;
+  }
 }
 
-.footer-text, a {
-    
-    font-size: 15px;
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2px;
-    font-weight: bold;
-    line-height: 30px;
+.logo {
+  height: 60px;
 }
 
-/*ECHEVERIAS DOCUMENTO.*/
-
-h3 {
-    color: black;
-    font-size: 100px;
-    font-family: 'Peralta', cursive;
-    margin: 100px 0 60px 0;
+main h1, footer div div, footer div div a {
+  display: flex;
+  justify-content: center;
 }
 
-
-.p-nosotros {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    text-align: justify;
-    font-weight: bold;
-    margin: 10px 120px 35px 120px;
-    text-indent: 5%;
-    line-height: 160%;
-    }
-
-/*Animaciones*/
-.animation-menu:hover {
-    transform: scale(1.5);
+.titulos, footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-/*Parrafos responsive usando media queries / para mobile */
-
-@media only screen and (max-width: 500px){
-    .p-nosotros {
-        font-family: 'Roboto', sans-serif;
-        font-size: 10px;
-        text-align: justify;
-        font-weight: bold;
-        margin: 5px 60px 17px 60px;
-        text-indent: 5%;
-        line-height: 160%;
-    }
-
-    .link-categorias {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        color: black;
-        font-size: 18px;
-        font-family: 'Peralta', cursive;
-        text-decoration: none;
-        margin: 60px 0 15px 0;
-        line-height: 130%;
-        width: auto;
-    }
-
-    .sub-categorias { 
-        color: black;
-        font-family: 'Peralta', cursive;
-        width: 100%;
-        font-size: 10px;
-        margin-bottom: 30px;
-    }
-
-    .final-text {
-        font-family: 'Roboto', sans-serif;
-        font-size: 9px;
-        text-align: center;
-        font-weight: bold;
-        width: 100%;
-    }
-
-    h2 .item-marca {
-        font-size: medium;
-    }
-
-    .footer-container {
-        width: 100%;
-        height: auto;
-        display: flex;
-        background-color: black;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .footer-items {
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        
-    }
-    
-    .footer-text, a {
-        
-        font-size: 8px;
-        text-decoration: none;
-        color: white;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 1px;
-        font-weight: bold;
-        line-height: 15px;
-    }
-
-    .img-px {
-        width: 100%;
-        height: auto;
-        padding: 0 1% 0 1%;
-        margin-bottom: 4%;
-}
-.brand-logo {
-    height: 60px;
-    }
-
-
-.brand-text {
-    color: white;
-    font-family: 'Peralta', cursive;
-    font-size: 20px;
-    }
+/*Titulos y subtitulos*/
+.titulos {
+  color: black;
+  font-size: 30px;
+  font-family: "Peralta", cursive;
+  text-decoration: none;
+  margin-top: 8%;
+  width: 100%;
+  text-align: center;
 }
 
 color: nth($colores, 1);

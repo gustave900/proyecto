@@ -1,0 +1,50 @@
+@import '../base/listas';
+@import '../base/extends';
+
+footer {
+    div {
+        @extend %footer-container;
+            div {
+            @extend %footer-items;
+                a {
+                @extend %footer-text;
+            }
+                a:hover {
+                    color: #005221;
+                }
+        }
+        
+    }
+
+@media only screen and (max-width: 500px) {
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        div {
+            width: 100%;
+            height: auto;
+            display: flex;
+            background-color: black;
+            justify-content: space-around;
+            align-items: center;
+            div{
+                background-color: black;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+                a {
+                    font-size: 8px;
+                    letter-spacing: 1px;
+                    line-height: 15px;
+                }
+            }
+        }
+    }
+}
+}
